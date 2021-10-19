@@ -14,9 +14,16 @@ export class StudUpdateComponent implements OnInit {
   constructor(private studserv:StudService,private router:Router,private activeroute:ActivatedRoute) {
     
     this.userForm=new FormGroup({
-      "rollno":new FormControl('',Validators.required),
-      "name":new FormControl('',Validators.required),
-      "email":new FormControl('',[Validators.required,Validators.email])
+      
+      'name':new FormControl('',Validators.required),
+      'dob':new FormControl('',Validators.required),
+      'skills':new FormControl('',Validators.required),
+      'dept':new FormControl('',Validators.required),
+      'addr':new FormControl('',Validators.required),
+      'city':new FormControl('',Validators.required),
+      'state':new FormControl('',Validators.required),
+      'country':new FormControl('',Validators.required),
+      'zipcode':new FormControl('',Validators.required)
     });
    }
 

@@ -1,16 +1,12 @@
 export interface Stud {
     id?:number,
-    rollno:number,
     name: string,
-    email: string
-}
-export interface Att{
-    id?:number,
-    rollno:string,
-    date:string,
-    status:string
-}
-export interface Graph{
-    date:string,
-    no_of_attendees:number
+    dob:Date,
+    skills:string,
+    dept:string,
+    addr:string,
+    city:string,
+    state:string,
+    country:string,
+    zipcode:number
 }

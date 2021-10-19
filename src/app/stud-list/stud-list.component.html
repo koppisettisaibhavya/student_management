@@ -14,18 +14,30 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>rollno</th>
                                 <th>name</th>
-                                <th>email</th>
+                                <th>dob</th>
+                                <th>skills</th>
+                                <th>dept</th>
+                                <th>addr</th>
+                                <th>city</th>
+                                <th>state</th>
+                                <th>country</th>
+                                <th>zipcode</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
                                 <th>ID</th>
-                                <th>rollno</th>
                                 <th>name</th>
-                                <th>email</th>
+                                <th>dob</th>
+                                <th>skills</th>
+                                <th>dept</th>
+                                <th>addr</th>
+                                <th>city</th>
+                                <th>state</th>
+                                <th>country</th>
+                                <th>zipcode</th>
                                 <th>Action</th>
                             </tr>
                         </tfoot>
@@ -33,9 +45,15 @@
                         <tbody>
                             <tr *ngFor="let stud of studList">
                                 <td>{{stud.id}}</td>
-                                <td>{{stud.rollno}}</td>
                                 <td>{{stud.name}}</td>
-                                <td>{{stud.email}}</td>
+                                <td>{{stud.dob}}</td>
+                                <td>{{stud.skills}}</td>
+                                <td>{{stud.dept}}</td>
+                                <td>{{stud.addr}}</td>
+                                <td>{{stud.city}}</td>
+                                <td>{{stud.state}}</td>
+                                <td>{{stud.country}}</td>
+                                <td>{{stud.zipcode}}</td>
                                 
                                 <td>
                                     <button [routerLink]="['/stud-update',stud.id]" class="btn btn-primary btn-sm mr-2">Edit</button>

@@ -11,7 +11,7 @@ import { StudUpdateComponent } from './stud-update/stud-update.component';
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'/dashboard',
+    redirectTo:'/stud-list',
     pathMatch:'full'
 
   },

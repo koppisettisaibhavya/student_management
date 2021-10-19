@@ -10,6 +10,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 
 import { StudListComponent } from './stud-list/stud-list.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { StudListComponent } from './stud-list/stud-list.component';
    
     SidebarComponent,
     TopbarComponent,
-    StudListComponent
+    StudListComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
