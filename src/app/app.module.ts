@@ -8,7 +8,8 @@ import { StudCreateComponent } from './stud-create/stud-create.component';
 import { StudUpdateComponent } from './stud-update/stud-update.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CardComponent } from './card/card.component';
 import { StudListComponent } from './stud-list/stud-list.component';
 import { TestComponent } from './test/test.component';
 
@@ -19,7 +20,8 @@ import { TestComponent } from './test/test.component';
     StudCreateComponent,
     
     StudUpdateComponent,
-   
+   DashboardComponent,
+   CardComponent,
     SidebarComponent,
     TopbarComponent,
     StudListComponent,

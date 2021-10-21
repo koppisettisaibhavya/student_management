@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { StudListComponent } from './stud-list/stud-list.component';
 import { StudCreateComponent } from './stud-create/stud-create.component';
 import { StudUpdateComponent } from './stud-update/stud-update.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 //import { AddAttendanceComponent } from './add-attendance/add-attendance.component';
 //import { StudReadComponent } from './stud-read/stud-read.component';
 //import { Test1Component } from './test1/test1.component';
@@ -14,6 +15,10 @@ const routes: Routes = [
     redirectTo:'/stud-list',
     pathMatch:'full'
 
+  },
+  {
+    path:"dashboard",
+    component:DashboardComponent
   },
   {
     path:"stud-list",

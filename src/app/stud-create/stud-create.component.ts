@@ -35,8 +35,9 @@ export class StudCreateComponent implements OnInit {
       }
     });
     if(this.userForm.valid)
-    {
+    {//console.log("****")
       this.studserv.saveStud(this.userForm.value).subscribe(()=>{
+        console.log("****")
         this.router.navigate(['/stud-list']);
     
     },

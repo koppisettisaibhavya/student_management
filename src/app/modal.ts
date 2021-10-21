@@ -1,5 +1,5 @@
 export interface Stud {
-    id?:number,
+    _id?:string,
     name: string,
     dob:Date,
     skills:string,

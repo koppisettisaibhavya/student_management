@@ -10,20 +10,21 @@ export class StudService {
   constructor(private http:HttpClient) { }
   saveStud(stud:Stud){
     // this.userData.push(user)
-    return this.http.post(`https://applicstud.herokuapp.com/studadd`,stud)
+    return this.http.post(`https://studapimean.herokuapp.com/studadd`,stud)
   }
   getAllStud(){
-    return this.http.get<Array<Stud>>(`https://applicstud.herokuapp.com/studlist`)
+    return this.http.get<Array<Stud>>(`https://studapimean.herokuapp.com/studlist`)
   }
-  getStudByID(id:number){
-    return this.http.get<Stud>(`https://applicstud.herokuapp.com/studlist/${id}`)
-  }
-
-  updateStudById(userId:number,userdata:Stud){
-    return this.http.put(`https://applicstud.herokuapp.com/studlist/${userId}`,userdata)
+  getStudByID(id:string){
+    return this.http.get<Stud>(`https://studapimean.herokuapp.com/studlist/${id}`)
   }
 
-  deleteUserById(id?:number){
-    return this.http.delete(`https://applicstud.herokuapp.com/studlist/${id}`)
+  updateStudById(userId:string,userdata:Stud){
+    console.log("^^^")
+    return this.http.put(`https://studapimean.herokuapp.com/studlist/${userId}`,userdata)
+  }
+
+  deleteUserById(id?:string){
+    return this.http.delete(`https://studapimean.herokuapp.com/studlist/${id}`)
   }
 }

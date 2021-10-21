@@ -22,9 +22,10 @@ export class StudListComponent implements OnInit {
   loadData(){
     this.studserv.getAllStud().subscribe((data:Array<Stud>) => {
       this.studList = data
+      console.log(data);
      })
   }
-  deleteData(id?:number){
+  deleteData(id?:string){
     this.studserv.deleteUserById(id).subscribe(() => {
       this.loadData()
     })

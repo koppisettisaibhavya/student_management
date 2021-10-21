@@ -9,7 +9,7 @@ import { StudService } from '../stud.service';
   styleUrls: ['./stud-update.component.css']
 })
 export class StudUpdateComponent implements OnInit {
-  id:number=0;
+  id:string="";
   userForm:FormGroup;
   constructor(private studserv:StudService,private router:Router,private activeroute:ActivatedRoute) {
     
@@ -32,7 +32,7 @@ export class StudUpdateComponent implements OnInit {
       this.id = paramsData.id;
       this.studserv.getStudByID(paramsData.id).subscribe((data) => {
         //console.log(data)
-        delete data.id
+        delete data._id
         this.userForm.setValue(data)
       })
     })
@@ -40,7 +40,9 @@ export class StudUpdateComponent implements OnInit {
   submit_details(): void
   {
     this.studserv.updateStudById(this.id,this.userForm.value).subscribe(()=>{
+      console.log(this.id)
       this.router.navigate(['/stud-list']);
+
     },
     ()=>{
       alert("wrong");
