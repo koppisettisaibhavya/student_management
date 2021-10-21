@@ -1,3 +1,6 @@
+#Netlify link
+https://keen-pare-cbe6a1.netlify.app/
+
 # Studentmgmt
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
